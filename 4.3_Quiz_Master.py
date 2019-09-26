@@ -116,9 +116,20 @@ else:
 v1 = (end_score + wr_score)
 perc = ((end_score/v1)* 100//1)
 
-print("Have a fun time playing! Well this is your end score is /n")
+print("\nHave a fun time playing! Well this is your end score!\n")
 
-print("End Score : ", end_score)
+if perc >= 90:
+  print("Your grade is an A")
+elif perc >=80:
+  print("Your grade is a B")
+elif perc >= 70:
+  print("Your grade is a C")
+elif perc >=60:
+  print("Your grade is a D")
+else:
+  print ("Flee to Johnston")
+
+print("\nEnd Score : ", end_score)
 
 print("\n This is your percentage you got right! : ", perc)
 
