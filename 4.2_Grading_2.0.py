@@ -15,12 +15,14 @@ ew/= 100
 o = (sg * (1 - ew) + fg * (ew))
 
 if o >= 90:
-  print("Your grade is a A")
-elif o >=80 and o <= 89 :
+  print("Your grade is an A")
+elif o >=80:
   print("Your grade is a B")
-elif o >= 70 and o <= 80:
+elif o >= 70:
   print("Your grade is a C")
-elif o >=60 and o <=69:
+elif o >=60:
   print("Your grade is a D")
-elif o < 50 :
+else:
   print ("Flee to Johnston")
+
+print("This is your grade percentage! : ", o)

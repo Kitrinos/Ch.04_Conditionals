@@ -15,11 +15,13 @@ print("Comic Book")
 
 answer = input("\nWhich is true?? : ")
 end_score = 0
+wr_score = 0
 
 if answer.upper() == "Pizza" or answer.lower() == "pizza":
     end_score+= 1
     print("Good job!")
 else:
+    wr_score+= 1
     print("Oops Better luck next time! The awnser was Pizza\n")
 
 print("\n2. What is considered very rude and insulting in japanese restaurants\n")
@@ -34,6 +36,7 @@ if answer.upper() == "Tipping" or answer.lower() == "tipping" :
     end_score+=1
     print("Good job!")
 else:
+    wr_score += 1
     print("Oops Better luck next time! The answer was Tipping\n")
 
 print("\n3. What do Fifteen percent of Women do during Valentines day?\n")
@@ -48,6 +51,7 @@ if answer.upper() == "C" or answer.lower() == "c" :
     end_score+=1
     print("Good job!")
 else:
+    wr_score += 1
     print("Oops Better luck next time! The answer was C\n")
 
 print("\n4. What is the square root of 25?\n")
@@ -62,13 +66,14 @@ if answer.upper() == "5":
     end_score+=1
     print("Good job!")
 else:
+    wr_score += 1
     print("Oops Better luck next time! The answer was 5\n")
 
-print("\n5. What cypher shifts the alphabet one three forward?\n")
+print("\n5. What cypher shifts the alphabet one forward?\n")
 
 print("Ceaser cypher")
 print("ROT13 Cypher")
-print("Affine Cypjer\n")
+print("Affine Cypher\n")
 
 answer = input("What is the correct cypher? : ")
 
@@ -76,13 +81,14 @@ if answer.upper() == "Ceaser Cypher" or answer.lower() == "ceaser cypher" :
     end_score+=1
     print("Good job! Thats the correct answer")
 else:
+    wr_score += 1
     print("Oops Better luck next time! The answer was Ceaser Cypher\n")
 
-print("\n6. What was Cr.Strange's profession before he became Sorcerer Supreme? ")
+print("\n6. What was Dr.Strange's profession before he became Sorcerer Supreme? ")
 
 print("A. Professor")
 print("B. Dermatologist")
-print("C. Nourosurgeon\n")
+print("C. Neurosurgeon\n")
 
 answer = input("Which job is right? : ")
 
@@ -90,6 +96,7 @@ if answer.upper() == "C" or answer.lower() == "c" :
     end_score+=1
     print("Good job! Thats the correct answer\n")
 else:
+    wr_score += 1
     print("Oops Better luck next time! The answer was Nourosurgeon\n")
 
 print("7. Pirates wore eye patches so they could see better in the dark ")
@@ -103,8 +110,15 @@ if answer.upper() == "True" or answer.lower() == "true" :
     end_score+=1
     print("\nGood job! Thats the correct answer\n")
 else:
-    print("Oops Better luck next time! The answer was True\n")
+    wr_score += 1
+    print("\nOops Better luck next time! The answer was True\n")
+
+v1 = (end_score + wr_score)
+perc = ((end_score/v1)* 100//1)
 
 print("Have a fun time playing! Well this is your end score is /n")
 
 print("End Score : ", end_score)
+
+print("\n This is your percentage you got right! : ", perc)
+
