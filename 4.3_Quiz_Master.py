@@ -17,12 +17,12 @@ answer = input("\nWhich is true?? : ")
 end_score = 0
 wr_score = 0
 
-if answer.upper() == "Pizza" or answer.lower() == "pizza":
+if answer.lower() == "pizza":
     end_score+= 1
     print("Good job!")
 else:
     wr_score+= 1
-    print("Oops Better luck next time! The awnser was Pizza\n")
+    print("Oops Better luck next time! The answer was Pizza\n")
 
 print("\n2. What is considered very rude and insulting in japanese restaurants\n")
 
@@ -60,9 +60,9 @@ print("2")
 print("6")
 print("5\n")
 
-answer = input("What is your answer? : ")
+answer = input("What is your answer? :\n ")
 
-if answer.upper() == "5":
+if answer.upper() == "5" or answer.upper() == "FIVE":
     end_score+=1
     print("Good job!")
 else:
@@ -84,7 +84,7 @@ else:
     wr_score += 1
     print("Oops Better luck next time! The answer was Ceaser Cypher\n")
 
-print("\n6. What was Dr.Strange's profession before he became Sorcerer Supreme? ")
+print("\n6. What was Dr. Strange's profession before he became Sorcerer Supreme? ")
 
 print("A. Professor")
 print("B. Dermatologist")
@@ -94,12 +94,12 @@ answer = input("Which job is right? : ")
 
 if answer.upper() == "C" or answer.lower() == "c" :
     end_score+=1
-    print("Good job! Thats the correct answer\n")
+    print("Good job! That's the correct answer\n")
 else:
     wr_score += 1
-    print("Oops Better luck next time! The answer was Nourosurgeon\n")
+    print("Oops Better luck next time! The answer was Neurosurgeon\n")
 
-print("7. Pirates wore eye patches so they could see better in the dark ")
+print("7. Pirates wear eye patches so they could see better in the dark ")
 
 print("True")
 print("False\n")
@@ -108,7 +108,7 @@ answer = input("Is this true or false? : ")
 
 if answer.upper() == "True" or answer.lower() == "true" :
     end_score+=1
-    print("\nGood job! Thats the correct answer\n")
+    print("\nGood job! That's the correct answer\n")
 else:
     wr_score += 1
     print("\nOops Better luck next time! The answer was True\n")
